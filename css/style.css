@@ -1,0 +1,711 @@
+/* common css start */
+* {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+img {
+  vertical-align: middle;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+/* common css end */
+
+/* ====================================== menu part css start ====================================== */
+.menu_part {
+  height: 90px;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.44
+  );
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.menu_container {
+  display: flex;
+}
+
+.logo {
+  flex-basis: 180px;
+  padding: 25px 0 0 5px;
+}
+
+.logo a > img {
+  width: 100%;
+}
+
+.main_menu {
+  flex-basis: 844px;
+}
+
+.main_menu ul {
+  display: flex;
+  column-gap: 44px;
+  justify-content: flex-end;
+}
+
+.main_menu ul > li a {
+  color: #f5f5f5;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: "Roboto Condensed",
+    sans-serif;
+  line-height: 90px;
+  text-transform: uppercase;
+  transition: all linear 0.4s;
+}
+
+.main_menu ul > li a:hover {
+  color: #28b8d8;
+}
+
+.menu_icons {
+  display: flex;
+  flex-basis: 146px;
+  justify-content: flex-end;
+  column-gap: 14px;
+  line-height: 90px;
+  position: relative;
+}
+
+.menu_icons::after {
+  position: absolute;
+  content: "";
+  left: 25px;
+  top: 30px;
+  width: 1px;
+  height: 30px;
+  background-color: #3a3a42;
+}
+
+.menu_icons a {
+  color: #fff;
+  font-size: 14px;
+  transition: all linear 0.4s;
+}
+
+.menu_icons a:hover {
+  color: #28b8d8;
+}
+/* ====================================== menu part css end ======================================== */
+
+/* ====================================== banner part css start ==================================== */
+.banner_part {
+  background: url("../images/banner.jpg")
+    no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 330px 0 252px;
+  text-align: center;
+}
+
+.banner_text h1 {
+  color: #fff;
+  font-size: 50px;
+  font-weight: 700;
+  font-family: "Roboto Condensed",
+    sans-serif;
+  text-transform: uppercase;
+}
+
+.banner_text h3 {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 300;
+  font-family: "Roboto Slab",
+    serif;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin: -6px 0 6px;
+}
+
+.banner_text p {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 300;
+  font-family: "Roboto Slab",
+    serif;
+}
+/* ====================================== banner part css end ====================================== */
+
+/* ====================================== service part css start =================================== */
+.service_part {
+  padding: 80px 0;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.service_part
+  .service_head
+  h2 {
+  color: #444444;
+  font-size: 30px;
+  font-weight: 300;
+  font-family: "Roboto Slab",
+    serif;
+}
+
+.service_part
+  .service_head
+  p {
+  color: #666666;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Roboto",
+    sans-serif;
+  padding: 20px 0 74px;
+}
+
+/* service_inner */
+.service_inner
+  .service_inner_head
+  h3 {
+  color: #444;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: "Roboto Condensed",
+    sans-serif;
+  text-transform: uppercase;
+  padding-bottom: 24px;
+}
+
+.service_inner
+  .service_inner_body {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 30px;
+}
+
+.service_inner_body
+  .service_inner_main {
+  flex-grow: 1;
+  flex-basis: 31.62%;
+  padding: 15px;
+  border: 1px solid
+    transparent;
+  transition: all linear 0.4s;
+}
+
+.service_inner_main:hover {
+  background-color: #fff;
+  border-color: #e3e3e3;
+}
+
+.service_inner_main
+  .service_inner_img
+  img {
+  max-width: 100%;
+}
+
+.service_inner_main
+  .service_inner_text
+  h5 {
+  color: #444444;
+  font-size: 17px;
+  font-weight: 700;
+  font-family: "Roboto Slab",
+    serif;
+  padding: 18px 0 8px;
+  transition: all linear 0.4s;
+}
+
+.service_inner_main:hover
+  .service_inner_text
+  h5 {
+  color: #28b8d8;
+}
+
+.service_inner_main
+  .service_inner_text
+  p {
+  color: #666666;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Roboto",
+    sans-serif;
+  line-height: 22px;
+  padding: 0 10px 8px;
+}
+/* ====================================== service part css end ===================================== */
+
+/* ====================================== instagram part css start ================================= */
+.insta_part {
+  padding: 80px 0;
+  background-color: #2c2c2c;
+  text-align: center;
+}
+
+.insta_head {
+  display: inline-block;
+  position: relative;
+}
+
+.insta_head::after {
+  position: absolute;
+  content: "";
+  right: -115px;
+  top: 12px;
+  width: 100px;
+  height: 1px;
+  background-color: #535353;
+}
+
+.insta_head::before {
+  position: absolute;
+  content: "";
+  right: -115px;
+  top: 9px;
+  width: 100px;
+  height: 1px;
+  background-color: #535353;
+}
+
+.insta_head h3 {
+  color: #d5d5d5;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: "Roboto Condensed",
+    sans-serif;
+  text-transform: uppercase;
+  display: inline-block;
+  position: relative;
+}
+
+.insta_head h3::after {
+  position: absolute;
+  content: "";
+  left: -115px;
+  top: 12px;
+  width: 100px;
+  height: 1px;
+  background-color: #535353;
+}
+
+.insta_head h3::before {
+  position: absolute;
+  content: "";
+  left: -115px;
+  top: 9px;
+  width: 100px;
+  height: 1px;
+  background-color: #535353;
+}
+
+.insta_inner {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 15px;
+  padding: 30px 15px 40px;
+}
+
+.insta_inner .insta_img {
+  flex-grow: 1;
+  flex-basis: 24.28%;
+}
+
+.insta_inner .insta_img img {
+  width: 100%;
+}
+
+.insta_btn a {
+  color: #a6a6a6;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Roboto",
+    sans-serif;
+  padding: 20px;
+  border: 1px solid #797979;
+  text-transform: uppercase;
+  transition: all linear 0.4s;
+}
+
+.insta_btn a > i {
+  padding-right: 4px;
+}
+
+.insta_btn a:hover {
+  background-color: #28b8d8;
+  color: #f9f9f9;
+  border-color: #28b8d8;
+}
+/* ====================================== instagram part css end =================================== */
+
+/* ====================================== journal part css start =================================== */
+.journal_part {
+  padding: 80px 0;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.journal_head h3 {
+  color: #444444;
+  transition: all linear 0.4s;
+}
+
+.journal_head::after {
+  background-color: #d9d9d9;
+}
+
+.journal_head::before {
+  background-color: #d9d9d9;
+}
+
+.journal_head h3::after {
+  background-color: #d9d9d9;
+}
+
+.journal_head h3::before {
+  background-color: #d9d9d9;
+}
+
+/* journal_inner */
+.journal_inner {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 30px;
+  padding-top: 30px;
+}
+
+.journal_inner_main {
+  flex-grow: 1;
+  flex-basis: 31.62%;
+  border: 1px solid
+    transparent;
+  transition: all linear 0.4s;
+}
+
+.journal_inner_main:hover {
+  background-color: #fff;
+  border-color: #e3e3e3;
+}
+
+.journal_inner_heading h4 {
+  color: #444444;
+  font-size: 17px;
+  font-weight: 700;
+  font-family: "Roboto Slab",
+    serif;
+  padding-top: 20px;
+}
+
+.journal_inner_heading h6 {
+  color: #999999;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: "Roboto",
+    sans-serif;
+  padding: 6px 0 22px;
+}
+
+.journal_inner_img img {
+  width: 100%;
+}
+
+.journal_inner_text {
+  padding: 22px 30px 30px 25px;
+  text-align: left;
+}
+
+.journal_inner_text p {
+  color: #666666;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Roboto",
+    sans-serif;
+  line-height: 22px;
+}
+
+/* journal inner links */
+.journal_inner_link {
+  position: relative;
+  margin-top: 14px;
+  display: flex;
+  column-gap: 185px;
+}
+
+.journal_inner_link a {
+  color: #999999;
+  font-size: 11px;
+  font-weight: 400;
+  font-family: "Roboto",
+    sans-serif;
+  text-transform: uppercase;
+  transition: all linear 0.4s;
+}
+
+.journal_inner_link a:hover {
+  color: #28b8d8;
+}
+
+.journal_inner_link::after {
+  position: absolute;
+  content: "";
+  width: 102px;
+  height: 1px;
+  background-color: #28b8d8;
+  left: 0;
+  bottom: -3px;
+}
+/* ====================================== journal part css end ===================================== */
+
+/* ====================================== about part css start ===================================== */
+.about_part {
+  padding-bottom: 80px;
+  background-color: #f9f9f9;
+}
+
+.about_container {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 30px;
+}
+
+/* about head part start */
+.about_head::after {
+  background-color: #d9d9d9;
+}
+
+.about_head::before {
+  background-color: #d9d9d9;
+}
+
+.about_head h3 {
+  color: #333;
+  padding-bottom: 24px;
+}
+
+.about_head h3::after {
+  display: none;
+}
+
+.about_head h3::before {
+  display: none;
+}
+/* about head part end */
+
+/* about section part start */
+.about_section {
+  flex-grow: 1;
+  flex-basis: 48.71%;
+}
+
+.about_inner {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 27px;
+}
+
+/* about section - img part start  */
+.about_img {
+  flex-basis: 197px;
+}
+
+.about_img img {
+  width: 100%;
+}
+/* about section - img part end  */
+
+/* about section - text part start  */
+.about_text {
+  flex-basis: 346px;
+}
+
+.about_text h4 {
+  color: #666666;
+  font-size: 18px;
+  font-weight: 300;
+  font-family: "Roboto Slab",
+    serif;
+  line-height: 28px;
+}
+
+.about_text p {
+  color: #666666;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Roboto",
+    sans-serif;
+  line-height: 24px;
+  padding-top: 18px;
+}
+/* about section - img part start  */
+
+/* about section part end */
+
+/* about service part start */
+.about_service_main {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+}
+
+.about_service_img {
+  flex-basis: 46px;
+  padding-left: 6px;
+}
+
+.about_service_img img {
+  width: 100%;
+}
+
+.about_service_text {
+  flex-basis: 460px;
+}
+
+.about_service_text h4 {
+  color: #444444;
+  font-size: 17px;
+  font-weight: 700;
+  font-family: "Roboto Slab",
+    serif;
+}
+
+.about_service_text p {
+  color: #666;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Roboto", serif;
+  padding: 14px 0 20px;
+}
+/* about service part start */
+/* ====================================== about part css end ======================================= */
+
+/* ====================================== footer part css start ==================================== */
+.footer_part {
+  padding: 70px 0;
+  background-color: #373737;
+}
+
+.footer_inner {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer_main {
+  flex-grow: 1;
+  flex-basis: 25%;
+}
+
+.footer_main h4 {
+  color: #f0f0f0;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "Roboto Condensed",
+    sans-serif;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+
+.footer_main p {
+  color: #cacaca;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Roboto", serif;
+  line-height: 24px;
+}
+
+.footer_main p span {
+  display: block;
+  padding-top: 30px;
+}
+
+/* footer get-in-touch part start */
+.footer_touch p {
+  padding-right: 30px;
+  padding-bottom: 30px;
+}
+
+.footer_touch ul > li {
+  color: #cacaca;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Roboto", serif;
+  line-height: 24px;
+}
+
+.footer_touch ul li > span {
+  padding-left: 29px;
+}
+
+.footer_touch ul li > i {
+  padding-right: 10px;
+}
+
+.footer_touch
+  ul
+  li
+  > .location {
+  padding-right: 15px;
+}
+/* footer get-in-touch part end */
+
+/* footer twit part start */
+.footer_twit p {
+  padding-right: 55px;
+}
+/* footer twit part end */
+
+/* footer post part start */
+.post_text {
+  padding-bottom: 30px;
+  padding-right: 60px;
+}
+
+.post_text:last-child {
+  padding-bottom: 0px;
+}
+
+.post_text > p {
+  line-height: 22px;
+}
+
+.post_text h6 {
+  color: #929292;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: "Roboto", serif;
+  padding-top: 6px;
+}
+/* footer post part end */
+
+/* footer about part start */
+.footer_about p {
+  padding-right: 48px;
+}
+/* footer about part end */
+
+/* footer bottom part css start */
+.footer_btm {
+  height: 90px;
+  background-color: #333333;
+}
+
+.footer_btm p {
+  color: #cacaca;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Roboto", serif;
+  padding-top: 40px;
+}
+/* footer bottom part css end */
+/* ====================================== footer part css end ====================================== */
